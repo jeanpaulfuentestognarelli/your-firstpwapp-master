@@ -91,7 +91,7 @@ self.addEventListener('fetch', (evt) => {
                 }
                 return response;
               }).catch((err) => {
-                // Network request failed, try to get it from the cache.
+                // Network request failed, try to get it from the cache.gi
                 return cache.match(evt.request);
               });
         }));
